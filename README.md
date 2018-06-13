@@ -14,7 +14,7 @@ import (
 
 func main() {
 	log.SetFormatter(&SimpleTextFormatter{})
-    log.WithFields(log.Fields{
-        "animal": "walrus",
-    }).Info("A walrus appears")
+	log.WithFields(log.Fields{
+		"animal": "walrus",
+	}).Info("A walrus appears")
 ```
