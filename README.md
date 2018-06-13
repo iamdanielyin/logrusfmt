@@ -9,11 +9,11 @@ package main
 
 import (
 	log "github.com/sirupsen/logrus"
-	"github.com/yinfxs/logrusfmt"
+	fmt "github.com/yinfxs/logrusfmt"
 )
 
 func main() {
-	log.SetFormatter(&SimpleTextFormatter{})
+	log.SetFormatter(&fmt.SimpleTextFormatter{})
 	log.WithFields(log.Fields{
 		"animal": "walrus",
 	}).Info("A walrus appears")
